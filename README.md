@@ -8,10 +8,6 @@
 
 **EcoFly** is a FANET (Flying Ad-hoc Network) protocol designed to optimize UAV (Unmanned Aerial Vehicle) communication in disaster scenarios. By utilizing Improved Particle Swarm Optimization (IPSO) algorithms, EcoFly enhances communication reliability and reduces energy consumption. This project was implemented from August 2023 to November 2023 and includes realistic UAV simulations validated through comprehensive testing.
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/pratapavinesh/EcoFly/main/Images/networkAndEnergyModel.png" alt="UAV Communication" width="600"/>
-</div>
-
 ## <div align="center">Implementation Steps</div>
 
 ### Step 1: Defining the Energy Model
