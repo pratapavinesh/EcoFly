@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFly: Energy-Efficient FANET Protocol</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>EcoFly: Energy-Efficient FANET Protocol</h1>
+    <div align="center">
+      <img src="https://raw.githubusercontent.com/pratapavinesh/EcoFly/main/Images/networkAndEnergyModel.png" alt="EcoFly Logo" width="400"/>
+    </div>
+    <h2>Project Overview</h2>
+    <p><strong>EcoFly</strong> is a FANET (Flying Ad-hoc Network) protocol designed to optimize UAV (Unmanned Aerial Vehicle) communication in disaster scenarios. By utilizing Improved Particle Swarm Optimization (IPSO) algorithms, EcoFly enhances communication reliability and reduces energy consumption. This project was implemented from August 2023 to November 2023 and includes realistic UAV simulations validated through comprehensive testing.</p>
+    <h2>Implementation Steps</h2>
+    <h3>Step 1: Defining the Energy Model</h3>
+    <p><strong>Assumptions:</strong><br>
+      - Anchor nodes and blind nodes.<br>
+      - Energy of blind node, position, and velocity.</p>
+    <p><strong>Description:</strong><br>
+      This step involves defining the energy model for the UAVs. Anchor nodes are assumed to have fixed positions, while blind nodes are mobile. The energy consumption for positioning and movement is considered.</p>
+    <div align="center">
+      <img src="https://raw.githubusercontent.com/pratapavinesh/EcoFly/main/Images/networkAndEnergyModel.png" alt="Energy Model" width="600"/>
+    </div>
+    <h3>Step 2: Position Determination using PSO</h3>
+    <p><strong>Challenge:</strong><br>
+      In a disaster scenario, the actual positions of blind nodes are unknown.</p>
+    <p><strong>Solution:</strong><br>
+      Use anchor nodes to determine the positions of blind nodes using Particle Swarm Optimization (PSO).</p>
+    <div align="center">
+      <img src="https://raw.githubusercontent.com/pratapavinesh/EcoFly/main/Images/uavPositioning.png" alt="PSO Position Determination" width="600"/>
+    </div>
+    <h3>Step 3: Clustering using K-Means</h3>
+    <p><strong>Description:</strong><br>
+      Once the positions of blind nodes are determined, clustering is performed using the K-Means algorithm to group the nodes efficiently.</p>
+    <div align="center">
+      <img src="https://raw.githubusercontent.com/pratapavinesh/EcoFly/main/Images/clusterFormation.png" alt="K-Means Clustering" width="600"/>
+    </div>
+    <h3>Step 4: Cluster Head Selection using Improved PSO</h3>
+    <p><strong>Description:</strong><br>
+      Improved PSO is used to select the optimal cluster head within each cluster, ensuring efficient communication and energy usage.</p>
+    <div align="center">
+      <img src="https://raw.githubusercontent.com/pratapavinesh/EcoFly/main/Images/clusterHeadSelection.png" alt="Cluster Head Selection" width="600"/>
+    </div>
+    <h3>Step 5: Maintenance of Cluster Head</h3>
+    <p><strong>Challenge:</strong><br>
+      The structure of clusters may change due to the movement of nodes.</p>
+    <p><strong>Solution:</strong><br>
+      Maintenance involves restructuring clusters and reselecting cluster heads as needed.</p>
+    <h3>Step 6: Determining the Next Hop</h3>
+    <p><strong>Description:</strong><br>
+      The final step is determining the next hop for data transmission using Improved PSO, ensuring reliable and energy-efficient routing.</p>
+    <div align="center">
+      <img src="https://raw.githubusercontent.com/pratapavinesh/EcoFly/main/Images/routingProtocol.png" alt="Next Hop Determination" width="600"/>
+    </div>
+    <h2>Technologies Used</h2>
+    <p><strong>Algorithms:</strong> Improved Particle Swarm Optimization (IPSO)<br>
+       <strong>Simulation Tool:</strong> Matlab<br>
+       <strong>Version Control:</strong> GitHub</p>
+    <h2>Project Repository</h2>
+    <p>GitHub: <a href="https://github.com/pratapavinesh/EcoFly">pratapavinesh</a></p>
+    <h2>License</h2>
+    <p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>
+  </div>
+</body>
+</html>
